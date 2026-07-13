@@ -1148,3 +1148,75 @@ body{
 ::-webkit-scrollbar-thumb:hover{
     background:#3730a3;
 }
+/* ==========================================
+   ROLE-SPECIFIC RESUMES
+========================================== */
+
+.resume-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.resume-card{
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.resume-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(79,70,229,0.15);
+}
+
+.resume-icon{
+    font-size:2.5rem;
+}
+
+.resume-card h3{
+    color:#4f46e5;
+    font-size:1.1rem;
+}
+
+.resume-card p{
+    color:#6b7280;
+    font-size:0.88rem;
+    line-height:1.6;
+    flex:1;
+}
+
+.resume-card .resume-buttons{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    margin-top:5px;
+}
+
+.resume-card .project-btn{
+    font-size:0.85rem;
+    padding:8px 14px;
+}
+
+.resume-note{
+    text-align:center;
+    margin-top:35px;
+    color:#6b7280;
+    font-size:0.95rem;
+}
+
+.resume-note a{
+    color:#4f46e5;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.resume-note a:hover{
+    text-decoration:underline;
+}
