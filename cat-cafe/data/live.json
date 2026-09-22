@@ -1,38 +1,11 @@
 {
-  "updated_at": "2026-09-22T12:30:00+05:30",
-  "pipeline_status": "V1.3 demo snapshot · source-aware",
-  "source_note": "Real-world records are illustrative and should be verified on the linked official/public source before visiting.",
-  "welfare": {
-    "framework": "Five-pillar feline environmental needs",
-    "pillars": [
-      {"id":"safe","name":"Safe places","score":92,"metric":"retreat coverage","note":"Quiet hideaways and escape routes."},
-      {"id":"resources","name":"Separated resources","score":84,"metric":"resource separation","note":"Food, water, rest and toileting kept meaningfully separated."},
-      {"id":"play","name":"Play & predation","score":78,"metric":"enrichment rotation","note":"Short, choice-based play and foraging opportunities."},
-      {"id":"interaction","name":"Human interaction","score":91,"metric":"choice-respecting visits","note":"Cats can approach, pause or leave."},
-      {"id":"sensory","name":"Sensory needs","score":86,"metric":"calm environment","note":"Sound, smell, touch and cleaning routines are considered."}
-    ],
-    "overall": 86
-  },
-  "cafes": [
-    {"name":"Nine Lives Cat Café","city":"Pune","area":"Deccan Gymkhana","type":"Cat café · adoption","status":"Source verified","url":"https://ninelivescatfe.com/","note":"Real Pune cat café. Verify current hours and availability on the official source before visiting."},
-    {"name":"Cat Adoption Pune","city":"Pune","area":"Pune & PCMC","type":"Adoption network","status":"Public listings","url":"https://catadoption.in/","note":"Volunteer-run virtual adoption network; this card links back to the original source."},
-    {"name":"Purrfect Café","city":"Pune","area":"Koregaon Park","type":"Illustrative local card","status":"Demo","url":"#map","note":"Illustrative map data for the prototype; not a claim that a venue exists."},
-    {"name":"Whisker & Brew","city":"Pune","area":"Fictional · prototype","type":"Digital concept","status":"Demo","url":"#top","note":"Our fictional café. No real venue or reservation exists."}
-  ],
-  "residents": [
-    {"name":"Mocha","role":"The Sleepy Manager","mood":"Do-not-disturb-ish","activity":"napping beside the window","preference":"observe quietly","image":"assets/cats/mocha.svg"},
-    {"name":"Chai","role":"The Curious Explorer","mood":"curious","activity":"investigating the tunnel","preference":"let me approach you","image":"assets/cats/chai.svg"},
-    {"name":"Latte","role":"The Gentle Soul","mood":"settled","activity":"watching birds from a perch","preference":"soft voice + slow hand","image":"assets/cats/latte.svg"},
-    {"name":"Kopi","role":"The Mischief Maker","mood":"playful","activity":"chasing a feather toy","preference":"short play bursts","image":"assets/cats/kopi.svg"},
-    {"name":"Miso","role":"The Observer","mood":"watchful","activity":"monitoring the room","preference":"choice from a distance","image":"assets/cats/miso.svg"},
-    {"name":"Tofu","role":"The Foodie","mood":"hopeful","activity":"waiting for enrichment","preference":"food puzzles","image":"assets/cats/tofu.svg"},
-    {"name":"Mochi","role":"The Cuddle Expert","mood":"social","activity":"choosing a sunny chair","preference":"consent-based lap time","image":"assets/cats/mochi.svg"},
-    {"name":"Echo","role":"The Wise One","mood":"quiet","activity":"resting in a high nook","preference":"low traffic","image":"assets/cats/echo.svg"}
-  ],
-  "activity": [
-    {"time":"10:15","cat":"Mocha","text":"is napping by the window","icon":"☁️"},
-    {"time":"11:40","cat":"Chai","text":"is exploring the tunnel","icon":"🧭"},
-    {"time":"12:10","cat":"Kopi","text":"started a feather-toy sprint","icon":"🪶"},
-    {"time":"12:35","cat":"Echo","text":"moved to a quieter perch","icon":"🌿"}
-  ]
+  "updated_at":"2026-09-22T13:25:00+05:30",
+  "pipeline_status":"V1.4 demo snapshot · source-aware",
+  "source_note":"Resident behaviour and welfare telemetry are fictional simulation data. Real-world café records are illustrative and should be verified on the linked official/public source before visiting.",
+  "welfare":{"framework":"Five-pillar feline environmental needs","pillars":[{"id":"safe","name":"Safe places","score":92,"metric":"retreat coverage","note":"Quiet hideaways and escape routes."},{"id":"resources","name":"Separated resources","score":84,"metric":"resource separation","note":"Food, water, rest and toileting kept meaningfully separated."},{"id":"play","name":"Play & predation","score":78,"metric":"enrichment rotation","note":"Short, choice-based play and foraging opportunities."},{"id":"interaction","name":"Human interaction","score":91,"metric":"choice-respecting visits","note":"Cats can approach, pause or leave."},{"id":"sensory","name":"Sensory needs","score":86,"metric":"calm environment","note":"Sound, smell, touch and cleaning routines are considered."}],"overall":86},
+  "simulation":{"clock_mode":"local-browser-clock","environment":"calm-demo","visitor_load":"medium","sensory_load":"low","room_comfort":78,"choice_opportunities":14,"active_enrichment":5,"last_event":"Mochi chose the high perch"},
+  "cafes":[{"name":"Nine Lives Cat Café","city":"Pune","area":"Deccan Gymkhana","type":"Cat café · adoption","status":"Source verified","url":"https://ninelivescatfe.com/","note":"Real Pune cat café. Verify current hours and availability on the official source before visiting."},{"name":"Cat Adoption Pune","city":"Pune","area":"Pune & PCMC","type":"Adoption network","status":"Public listings","url":"https://catadoption.in/","note":"Volunteer-run virtual adoption network; this card links back to the original source."},{"name":"Purrfect Café","city":"Pune","area":"Koregaon Park","type":"Illustrative local card","status":"Demo","url":"#map","note":"Illustrative map data for the prototype; not a claim that a venue exists."},{"name":"Whisker & Brew","city":"Pune","area":"Fictional · prototype","type":"Digital concept","status":"Demo","url":"#top","note":"Our fictional café. No real venue or reservation exists."}],
+  "residents":[{"name":"Mocha","role":"Sleepy Manager","mood":"resting","activity":"napping beside the window","preference":"observe quietly","image":"assets/cats/mocha.svg","signals":["high-rest","choice","low-pressure"]},{"name":"Chai","role":"Curious Explorer","mood":"curious","activity":"investigating the tunnel","preference":"let me approach you","image":"assets/cats/chai.svg","signals":["novelty","approach","routes"]},{"name":"Latte","role":"Enrichment Detective","mood":"settled","activity":"watching birds from a perch","preference":"soft voice + slow hand","image":"assets/cats/latte.svg","signals":["foraging","perch","calm"]},{"name":"Kopi","role":"Mischief Maker","mood":"playful","activity":"chasing a feather toy","preference":"short play bursts","image":"assets/cats/kopi.svg","signals":["play","retreat","bursts"]},{"name":"Miso","role":"Observer","mood":"watchful","activity":"monitoring the room","preference":"choice from a distance","image":"assets/cats/miso.svg","signals":["observation","distance","window"]},{"name":"Tofu","role":"Foodie","mood":"hopeful","activity":"waiting for enrichment","preference":"food puzzles","image":"assets/cats/tofu.svg","signals":["foraging","food","novelty"]},{"name":"Mochi","role":"Cuddle Expert","mood":"social","activity":"choosing a sunny chair","preference":"consent-based lap time","image":"assets/cats/mochi.svg","signals":["choice","social","perch"]},{"name":"Echo","role":"Sound-Sensitive Scout","mood":"quiet","activity":"resting in a high nook","preference":"low traffic","image":"assets/cats/echo.svg","signals":["sensory","escape","quiet"]}],
+  "activity":[{"time":"09:12","cat":"Mochi","text":"chose the high perch","icon":"🪜","type":"choice"},{"time":"10:04","cat":"Latte","text":"received rotated puzzle enrichment","icon":"🧩","type":"enrichment"},{"time":"10:31","cat":"Echo","text":"occupied a quiet retreat","icon":"🌿","type":"retreat"},{"time":"11:18","cat":"Café","text":"visitor load increased to medium","icon":"👥","type":"operations"}],
+  "sources":[{"name":"International Cat Care","url":"https://icatcare.org/advice/cat-behaviour/","kind":"education"},{"name":"AAFP","url":"https://www.aafp.org/","kind":"veterinary education"},{"name":"ASPCA Cat Care","url":"https://www.aspca.org/pet-care/cat-care","kind":"care education"}]
 }
