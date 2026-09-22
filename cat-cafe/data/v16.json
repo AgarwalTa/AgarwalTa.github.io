@@ -1,0 +1,36 @@
+{
+  "version":"1.6",
+  "updated_at":"2026-09-22T13:45:00+05:30",
+  "note":"Whisker & Brew resident preferences, room simulation and café operations are fictional educational simulation data.",
+  "residents":[
+    {"id":"mocha","name":"Mocha","role":"Sleepy Manager","image":"assets/cats/mocha.svg","mood":"resting","bio":"Quiet by default. Mocha likes observation, high places and having an obvious way out.","preferences":{"retreat":92,"vertical":84,"play":48,"social":28,"noise":88,"novelty":35},"likes":["high perch","quiet nook","soft light"],"avoids":["crowding","forced touch","sudden noise"]},
+    {"id":"chai","name":"Chai","role":"Curious Explorer","image":"assets/cats/chai.svg","mood":"curious","bio":"Chai investigates new routes first and decides about humans later.","preferences":{"retreat":62,"vertical":76,"play":78,"social":55,"noise":48,"novelty":91},"likes":["tunnels","routes","novel objects"],"avoids":["blocked paths","repetition","being cornered"]},
+    {"id":"latte","name":"Latte","role":"Enrichment Detective","image":"assets/cats/latte.svg","mood":"settled","bio":"Latte prefers slow enrichment, bird-watching and predictable voices.","preferences":{"retreat":70,"vertical":82,"play":72,"social":44,"noise":42,"novelty":64},"likes":["puzzle feeder","window perch","gentle voice"],"avoids":["loud play","rushed handling","stale enrichment"]},
+    {"id":"kopi","name":"Kopi","role":"Mischief Maker","image":"assets/cats/kopi.svg","mood":"playful","bio":"Kopi has opinions about every toy and will test the physics of your furniture.","preferences":{"retreat":52,"vertical":74,"play":95,"social":63,"noise":54,"novelty":83},"likes":["wand toy","climbing","short play bursts"],"avoids":["long forced sessions","blocked play routes","boring toys"]},
+    {"id":"miso","name":"Miso","role":"Window Supervisor","image":"assets/cats/miso.svg","mood":"watchful","bio":"Miso prefers a little distance and a very good view of what everyone else is doing.","preferences":{"retreat":76,"vertical":96,"play":54,"social":32,"noise":62,"novelty":48},"likes":["window perch","distance","observation"],"avoids":["busy walkways","crowded laps","blocked views"]},
+    {"id":"tofu","name":"Tofu","role":"Puzzle Engineer","image":"assets/cats/tofu.svg","mood":"hopeful","bio":"Tofu considers food puzzles a legitimate engineering discipline.","preferences":{"retreat":66,"vertical":58,"play":81,"social":46,"noise":38,"novelty":77},"likes":["foraging","food puzzles","search games"],"avoids":["empty enrichment","predictable repetition","crowding"]},
+    {"id":"mochi","name":"Mochi","role":"Cuddle Expert","image":"assets/cats/mochi.svg","mood":"social","bio":"Mochi is social on her own terms and likes humans who understand consent cues.","preferences":{"retreat":48,"vertical":72,"play":69,"social":88,"noise":52,"novelty":68},"likes":["approach-and-pause","sunny chair","gentle touch"],"avoids":["grabbing","blocking exits","overstimulation"]},
+    {"id":"echo","name":"Echo","role":"Sound-Sensitive Scout","image":"assets/cats/echo.svg","mood":"quiet","bio":"Echo notices the room before entering it. Low traffic and escape routes matter a lot.","preferences":{"retreat":96,"vertical":78,"play":40,"social":18,"noise":97,"novelty":24},"likes":["quiet nook","high retreat","predictable routine"],"avoids":["loud music","crowds","sudden changes"]}
+  ],
+  "objects":[
+    {"id":"perch","name":"High perch","emoji":"🪜","kind":"vertical","effects":{"vertical":18,"retreat":6,"social":-3},"hint":"An elevated observation point."},
+    {"id":"hide","name":"Quiet nook","emoji":"🧺","kind":"retreat","effects":{"retreat":22,"noise":-8,"social":-4},"hint":"A protected place to opt out."},
+    {"id":"puzzle","name":"Puzzle feeder","emoji":"🧩","kind":"enrichment","effects":{"play":16,"novelty":10,"noise":-2},"hint":"Food-based problem solving."},
+    {"id":"wand","name":"Wand toy","emoji":"🪶","kind":"play","effects":{"play":24,"novelty":9,"noise":8},"hint":"Short, choice-based play."},
+    {"id":"window","name":"Window seat","emoji":"🪟","kind":"observation","effects":{"vertical":8,"retreat":8,"noise":-5},"hint":"Watch without being in the middle of things."},
+    {"id":"bed","name":"Soft bed","emoji":"🛏️","kind":"rest","effects":{"retreat":14,"noise":-6,"social":-2},"hint":"A predictable resting station."},
+    {"id":"scratch","name":"Scratch post","emoji":"🌿","kind":"enrichment","effects":{"play":10,"vertical":4,"novelty":4},"hint":"A movement and scratching option."},
+    {"id":"box","name":"Cardboard box","emoji":"📦","kind":"retreat","effects":{"retreat":18,"novelty":5,"social":-5},"hint":"Simple, movable, cat-approved chaos."}
+  ],
+  "rooms":[
+    {"id":"sunroom","name":"Sunroom","tone":"bright","description":"A sunny observation room with perches, windows and soft resting options."},
+    {"id":"quiet","name":"Quiet Garden","tone":"calm","description":"Low stimulation, protected paths and retreat-first design."},
+    {"id":"loft","name":"Play Loft","tone":"playful","description":"Vertical routes, enrichment and short bursts of activity."},
+    {"id":"cafe","name":"Café Floor","tone":"social","description":"The busiest room. Humans can interact, but cats always keep an exit."}
+  ],
+  "events":[
+    {"title":"A visitor has started calling a hiding cat out.","choices":["Ask them to give the cat space","Open the hide so the visitor can see","Offer food to lure the cat out"],"answer":0,"why":"A retreat only works when the cat can use it without being pursued."},
+    {"title":"The room gets noticeably louder.","choices":["Reduce the noise source","Call cats over for play","Increase the music so they adapt"],"answer":0,"why":"Address the environmental stressor before asking residents to tolerate more stimulation."},
+    {"title":"A resident walks away during interaction.","choices":["Follow them","Stop and allow the exit","Pick them up so they stay"],"answer":1,"why":"Leaving is useful information. Respecting the exit preserves choice and predictability."}
+  ]
+}
