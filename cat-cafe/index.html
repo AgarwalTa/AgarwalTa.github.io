@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#241d1a" />
+  <meta name="description" content="Whisker & Brew — a research-led interactive cat café concept exploring feline welfare, responsible interaction, and live Pune cat resources." />
+  <title>Whisker & Brew — Cat Café Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top"><span>whisker</span><b>&</b><span>brew</span></a>
+      <div class="nav-links">
+        <a href="#residents">Residents</a><a href="#live">Live Pune</a><a href="#lab">Welfare Lab</a><a href="#visit">Visit</a>
+      </div>
+      <button class="nav-cta" data-scroll="#visit">Plan a visit <span>↗</span></button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-pad">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">A fictional cat café concept · V1 · research-led</p>
+        <h1>Coffee.<br/>Cats.<br/><em>Choice.</em></h1>
+        <p class="hero-lede">A tiny digital café where the humans order coffee, the cats keep the house rules, and the internet gets useful cat data without pretending it knows everything.</p>
+        <div class="hero-actions"><button class="primary" data-scroll="#residents">Meet the residents <span>🐾</span></button><button class="secondary" data-scroll="#lab">Enter the Welfare Lab</button></div>
+        <div class="trust-row"><span>● live data layer</span><span>● welfare-first UX</span><span>● source-aware</span></div>
+      </div>
+      <div class="hero-art reveal" aria-label="Illustration of a cat in a cozy café">
+        <div class="window"><span class="sun"></span><span class="cloud c1"></span><span class="cloud c2"></span></div>
+        <div class="shelf"></div><div class="plant"><i></i><i></i><i></i></div>
+        <div class="cup"><span></span></div>
+        <div class="cat-art"><div class="tail"></div><div class="body"></div><div class="head"><i class="ear e1"></i><i class="ear e2"></i><i class="eye eye1"></i><i class="eye eye2"></i><i class="nose"></i><i class="whisk w1"></i><i class="whisk w2"></i></div></div>
+        <div class="art-note">the cat has veto power<br/><small>always</small></div>
+      </div>
+    </section>
+
+    <section id="residents" class="section-pad section-light">
+      <div class="section-head reveal"><div><p class="eyebrow">01 / the residents</p><h2>Meet your future<br/><em>obsession.</em></h2></div><p>The residents are fictional for this prototype. Their profiles demonstrate how a real café could expose personality, preferences and boundaries instead of treating cats as décor.</p></div>
+      <div id="cat-grid" class="cat-grid"></div>
+    </section>
+
+    <section id="live" class="section-pad live-section">
+      <div class="section-head reveal"><div><p class="eyebrow coral">02 / live data layer</p><h2>Pune, but<br/><em>make it feline.</em></h2></div><p>Public-source records are refreshed by the project's scheduled data pipeline. Every dynamic card carries its source and freshness so stale information does not cosplay as truth.</p></div>
+      <div class="live-toolbar reveal"><div><span class="status-dot"></span><b id="pipeline-status">Loading data pulse…</b><small id="updated-at"></small></div><button class="filter-chip active" data-city="all">All</button><button class="filter-chip" data-city="Pune">Pune</button><button class="filter-chip" data-city="Mumbai">Mumbai</button></div>
+      <div id="cafe-grid" class="cafe-grid"></div>
+      <div class="data-note reveal"><span>↻</span><div><b>How the live layer works</b><p>GitHub Actions periodically runs a small Python ingestion job, normalises public-source records, and commits the refreshed JSON used by this static site. The browser never needs secret keys or a scraper.</p></div></div>
+    </section>
+
+    <section id="lab" class="section-pad lab-section">
+      <div class="section-head reveal"><div><p class="eyebrow">03 / the welfare lab</p><h2>Can you read<br/>the <em>room?</em></h2></div><p>Welfare guidance is turned into small interactions. This is education, not diagnosis: the goal is to help visitors recognise boundaries and make lower-stress choices.</p></div>
+      <div class="lab-grid">
+        <article class="lab-card body-language reveal"><div class="lab-icon">🧠</div><p class="eyebrow">CAT BODY LANGUAGE</p><h3 id="question-title">What would you do?</h3><p id="question-copy"></p><div id="options"></div><div class="lab-feedback" id="feedback" aria-live="polite"></div><button class="text-btn" id="next-question">Next scenario →</button></article>
+        <article class="lab-card consent reveal"><div class="lab-icon">🚪</div><p class="eyebrow">CONSENT SIMULATOR</p><h3>A cat walks away.</h3><div class="meter"><span id="consent-meter"></span></div><p id="consent-copy">Interaction ended. The respectful move is to let the cat leave.</p><div class="choice-row"><button class="choice" data-consent="follow">Follow them</button><button class="choice good" data-consent="respect">Respect the exit</button></div><div id="consent-result" class="mini-result"></div></article>
+        <article class="lab-card design reveal"><div class="lab-icon">🏠</div><p class="eyebrow">CAFÉ DESIGN CHECK</p><h3>Build around the cat.</h3><div class="design-list"><label><input type="checkbox" data-rule="retreat" /> multiple retreat spaces</label><label><input type="checkbox" data-rule="perch" /> elevated resting options</label><label><input type="checkbox" data-rule="separation" /> separated food-prep area</label><label><input type="checkbox" data-rule="resources" /> distributed resources</label></div><div id="design-result" class="design-result">Start with one design decision.</div></article>
+      </div>
+    </section>
+
+    <section id="visit" class="section-pad visit-section">
+      <div class="visit-copy reveal"><p class="eyebrow">04 / your hour</p><h2>Book the vibe.<br/><em>Not the cat.</em></h2><p>V1 keeps booking intentionally simulated. A production café would connect this flow to a real availability system, visitor limits, staff controls and welfare capacity.</p><div class="visit-points"><span>01 · arrive & reset</span><span>02 · read the room</span><span>03 · let the cat choose</span></div></div>
+      <div class="booking-card reveal"><p class="eyebrow">DEMO SESSION</p><div class="session" data-session="Quiet coffee hour"><span>☕</span><div><b>Quiet coffee hour</b><small>60 minutes · low-key</small></div></div><div class="session" data-session="Play & explore"><span>🧶</span><div><b>Play & explore</b><small>60 minutes · enrichment</small></div></div><div class="session" data-session="Slow evening"><span>🌙</span><div><b>Slow evening</b><small>75 minutes · softer pace</small></div></div><button class="primary full" id="book-demo">Choose this session →</button><p class="booking-message" id="booking-message">No real reservation is made.</p></div>
+    </section>
+
+    <section class="sources section-pad">
+      <div class="section-head reveal"><div><p class="eyebrow">05 / source desk</p><h2>Show your<br/><em>receipts.</em></h2></div><p>The prototype is intentionally transparent about what is fictional, what is sourced, and when dynamic information was last refreshed.</p></div>
+      <div class="source-grid"><a href="https://catvets.com/wp-content/uploads/2026/02/FelineVMA-Environmental-Needs_2026-BW.pdf" target="_blank" rel="noreferrer">FelineVMA · Environmental Needs <span>↗</span></a><a href="https://fssai.gov.in/" target="_blank" rel="noreferrer">FSSAI · Food safety framework <span>↗</span></a><a href="https://ninelivescatfe.com/" target="_blank" rel="noreferrer">Nine Lives Cat Café · Pune <span>↗</span></a><a href="https://catadoption.in/" target="_blank" rel="noreferrer">Cat Adoption Pune · public listings <span>↗</span></a></div>
+    </section>
+  </main>
+
+  <footer><div><div class="footer-brand">whisker&brew</div><p>Fictional concept · interactive software project · V1</p></div><div class="footer-right"><span id="footer-pulse">data pulse: loading</span><a href="https://github.com/AgarwalTa/AgarwalTa.github.io/tree/main/cat-cafe" target="_blank" rel="noreferrer">view source ↗</a></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
